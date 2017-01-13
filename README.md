@@ -18,7 +18,16 @@ $ npm install get-trello-action-type
 
 ## Usage
 
-TODO.
+Example:
+
+```javascript
+import { getTrelloActionType, trelloActionTypes } from "get-trello-action-type";
+
+let action = { ... };
+let type = getTrelloActionType(action);
+
+console.log(type === trelloActionTypes.RENAME_CARD);
+```
 
 ## Related
 
