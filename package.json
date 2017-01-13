@@ -9,12 +9,18 @@
   "scripts": {
     "build": "node_modules/.bin/babel lib -d dist -q",
     "prebuild": "node_modules/.bin/rimraf dist",
-    "prepublish": "npm run build"
+    "precommit": "npm test",
+    "prepush": "npm test",
+    "prepublish": "npm test && npm run build",
+    "test": "node_modules/.bin/eslint -c dstil lib"
   },
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "6.18.0",
     "babel-preset-node6": "11.0.0",
+    "eslint": "3.8.1",
+    "eslint-config-dstil": "1.1.4",
+    "husky": "0.12.0",
     "rimraf": "2.5.4"
   },
   "keywords": [
