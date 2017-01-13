@@ -1,0 +1,33 @@
+{
+  "name": "get-trello-action-type",
+  "version": "0.0.0",
+  "description": "Determine the granular 'type' of a Trello action.",
+  "author": "DSTIL",
+  "license": "BSD-3-Clause",
+  "repository": "dstil/get-trello-action-type",
+  "main": "dist",
+  "scripts": {
+    "build": "node_modules/.bin/babel lib -d dist -q",
+    "prebuild": "node_modules/.bin/rimraf dist",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "6.18.0",
+    "babel-preset-node6": "11.0.0",
+    "rimraf": "2.5.4"
+  },
+  "keywords": [
+    "trello",
+    "actions",
+    "events",
+    "types",
+    "webhooks",
+    "api"
+  ],
+  "babel": {
+    "presets": [
+      "node6"
+    ]
+  }
+}
