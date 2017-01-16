@@ -1,6 +1,6 @@
 {
   "name": "get-trello-action-type",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Determine the granular \"type\" of a Trello action.",
   "author": "DSTIL",
   "license": "BSD-3-Clause",
