@@ -5,7 +5,7 @@
   "author": "DSTIL",
   "license": "BSD-3-Clause",
   "repository": "dstil/get-trello-action-type",
-  "main": "dist",
+  "main": "lib",
   "scripts": {
     "build": "node_modules/.bin/babel lib -d dist -q",
     "prebuild": "node_modules/.bin/rimraf dist",
